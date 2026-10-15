@@ -6,7 +6,7 @@ export const profile = {
   catalogTitle: "민혁쌤의 미니홈피",
   catalogDescription: "",
   /* 왼쪽 프로필 사진입니다. public/assets/ 안에 파일을 넣고 경로를 적으세요. */
-  photo: { src: "/assets/miyo-profile.png", alt: "기본 프로필 이미지" },
+  photo: { src: "/assets/minhyuk-profile.png", alt: "운동합시다! 안민혁 프로필" },
   /* 홈 탭 위쪽 미니룸 이미지입니다. public/assets/ 안에 파일을 넣고 경로를 적으세요. */
   miniroom: { src: "/assets/miyo-miniroom.png", alt: "기본 미니룸 이미지" },
   /* 아래는 탭 이름표입니다. 나만의 이름으로 바꿔도 되고, 안 바꾸면 기본값 그대로 나옵니다. */

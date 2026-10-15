@@ -1,14 +1,14 @@
 export const profile = {
-  teacherName: "",
-  title: "나의 링크트리",
-  introTitle: "나의 링크트리",
-  introDescription: "",
-  catalogTitle: "게시판",
+  teacherName: "민혁쌤",
+  title: "민혁쌤의 미니홈피",
+  introTitle: "민혁쌤의 미니홈피",
+  introDescription: "환영합니다~",
+  catalogTitle: "민혁쌤의 미니홈피",
   catalogDescription: "",
   /* 왼쪽 프로필 사진입니다. public/assets/ 안에 파일을 넣고 경로를 적으세요. */
-  photo: { src: "", alt: "" },
+  photo: { src: "/assets/miyo-profile.png", alt: "기본 프로필 이미지" },
   /* 홈 탭 위쪽 미니룸 이미지입니다. public/assets/ 안에 파일을 넣고 경로를 적으세요. */
-  miniroom: { src: "", alt: "" },
+  miniroom: { src: "/assets/miyo-miniroom.png", alt: "기본 미니룸 이미지" },
   /* 아래는 탭 이름표입니다. 나만의 이름으로 바꿔도 되고, 안 바꾸면 기본값 그대로 나옵니다. */
   storyLabel: "연재물",
   boardLabel: "게시판",
@@ -17,7 +17,7 @@ export const profile = {
   photoLabel: "사진첩",
   photoSubtitlePrefix: "사진",
   /* 오른쪽 위, 옛날 싸이월드 주소창을 흉내 낸 문구입니다. */
-  displayUrl: ""
+  displayUrl: "https://ljh6479z.github.io/mini-homepage/"
 };
 
 /* 프로필 탭에 들어가는 소개 글입니다. 문구만 바꿔서 쓰세요. */
@@ -72,7 +72,7 @@ export type WaveLink = {
 };
 
 export const waveLinks: WaveLink[] = [
-  { id: "dorms-activity", label: "도름스 커뮤니티 나의 활동", href: "" }
+  { id: "dorms-activity", label: "도름스 커뮤니티 나의 활동", href: "https://dorms.school/u/fc1d224b-e443-433c-bccf-650e35a09d31" }
 ];
 
 /* 미니홈피 BGM 입니다. 유튜브 영상을 음원으로 씁니다.
@@ -99,7 +99,7 @@ export function secondsAt(timestamp: string): number {
     .reduce((total, part) => total * 60 + part, 0);
 }
 
-export const bgmTracks: BgmTrack[] = [];
+export const bgmTracks: BgmTrack[] = [{ id: "welcome-bgm", title: "민혁쌤의 배경음악", videoId: "ShxagKy3CHQ", startAt: 0 }];
 
 /* 홈 탭 아래쪽 한마디입니다. */
 export type GuestbookEntry = {
